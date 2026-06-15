@@ -9,7 +9,7 @@ import {
 } from "react";
 import { Navigate, NavLink, Outlet, Route, Routes, useParams } from "react-router-dom";
 
-const API_URL = "https://vercel.com/srikar0006s-projects/sort-time-comparor-python-server/7if4XSoMVGM7fuauyGGj852utih8/api/compare";
+const API_URL = "https://sort-time-comparor-python-server.vercel.app/api/compare";
 const STORAGE_KEY = "algorithm-last-result";
 
 const algorithms = {
