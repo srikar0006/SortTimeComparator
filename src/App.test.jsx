@@ -73,7 +73,7 @@ describe("integration test", () => {
     expect(screen.getByText("Merge Sort was 3.00 times faster than Bubble Sort.")).toBeInTheDocument();
     expect(localStorage.getItem("algorithm-last-result")).toContain('"inputSize":3');
     expect(global.fetch).toHaveBeenCalledWith(
-      "http://localhost:8000/api/compare",
+      "https://sort-time-comparor-python-server.vercel.app/api/compare",
       expect.objectContaining({ method: "POST" }),
     );
   });
